@@ -5,6 +5,9 @@
   },
   "autoimport.useSemiColon": false, // auto import 기능으로 import한 모듈에 세미콜론 삽입
   "aws.codeWhisperer.shareCodeWhispererContentWithAWS": false,
+  "aws.suppressPrompts": {
+    "codeWhispererNewWelcomeMessage": true
+  },
   "aws.telemetry": false,
   "bookmarks.saveBookmarksInProject": true,
   "bookmarks.keepBookmarksOnLineDelete": true,
@@ -13,15 +16,18 @@
     "python": "$pythonPath -u $fullFileName"
   },
   "color-highlight.markRuler": false, // minimap에서 color-highlight 활성화
+  "color-highlight.matchWords": true, // 'red'나 'blue'처럼 색상명을 직접 입력했을 때도 색상 표시
   "compile-hero.disable-compile-files-on-did-save-code": false, // 저장 시 파일 자동 변환 방지
   "compile-hero.ignore": ["**/node_modules/*"],
   "compile-hero.scss-output-directory": "../css", // .css로 변환된 .scss 파일이 저장될 폴더 경로
   "compile-hero.watch": ["scss/*"], // 저장 시 자동으로 변환할 파일 목록
+  "console-ninja.featureSet": "Community",
   "css.customData": ["./css_custom_data.json"], // at-rule 등 css 관련 규칙을 사용자화 하여 이용하는 데 필요한 설정 파일을 연결하는 옵션
   "css.lint.unknownAtRules": "ignore", // sass 등과 같은 css 전처리기에서 사용하는 at rule을 css 파일에서 사용했을 때 at-rule-no-unknown 경고가 발생하지 않도록 함. stylelint가 발생시키는 에러 처리는 해당 at rule을 .stylelintrc에서 'at-rule-no-unknown'에 ignoreAtRules 옵션으로 추가할 것
   "css.lint.zeroUnits": "warning",
   "docwriter.progress.trackClasses": true,
   "docwriter.progress.trackTypes": true,
+  "editor.accessibilitySupport": "off", // 웹 접근성 관련 경고
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -52,7 +58,6 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact", // jsx 또는 js에서 emmet을 사용하는 옵션
     "postcss": "css" // postcss 문법을 사용하기 위한 옵션
-    // "vue": "html", // vue 키의 값을 css로 하면 html 대신 css emmet을 사용할 수 있다
     // "vue-html": "html"
   },
   "emmet.preferences": {
@@ -105,14 +110,13 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "npm.keybindingsChangedWarningShown": true,
   "git.mergeEditor": true, // conflict 시 diff 화면 스타일을 3-way merge로 표시
+  "playwright.showTrace": true,
   "problems.autoReveal": false,
   "projectManager.git.baseFolders": [
     "/Users/biniruu/Projects",
     "/Users/biniruu/Learning"
   ],
-  "projectManager.tags": ["Personal", "Work", "Side", "Boilerplates", "Blogs"],
   "puglint.enable": true,
-  "python.formatting.provider": "black",
   "python.jediEnabled": false,
   "pythonPreview.codeFooterDocs.fontSize": 13,
   "quokka.automaticRestart": true,
@@ -136,7 +140,7 @@
     "vue-postcss",
     "xml",
     "xsl"
-  ],
+  ], // stylelint로 유효성을 검증할 언어만 선택
   "turboConsoleLog.insertEnclosingClass": false,
   "turboConsoleLog.insertEnclosingFunction": false,
   "turboConsoleLog.quote": "'",
@@ -181,19 +185,12 @@
     "atlascode",
     "autoimport",
     "autoplace",
-    "blockless",
-    "capitalise",
-    "Chakra",
-    "codepaths",
     "craco",
-    "cssnano",
     "cssrem",
     "dbaeumer",
     "errorlens",
     "esbenp",
     "estree",
-    "gridcell",
-    "htmx",
     "Immer",
     "intellicode",
     "jsxdev",
@@ -203,19 +200,10 @@
     "nocheck",
     "nocomment",
     "octref",
-    "Optimising",
     "Orta",
     "Polacode",
-    "precached",
-    "radiogroup",
     "reduxjs",
-    "rightbar",
-    "tablist",
     "tailwindcss",
-    "tanstack",
-    "treegrid",
-    "treeitem",
-    "tsbuildinfo",
     "TTFB",
     "vanillajs",
     "Vetur",
