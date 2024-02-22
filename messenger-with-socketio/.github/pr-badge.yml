@@ -1,0 +1,10 @@
+- label: 'JIRA'
+  message: '$issuePrefix'
+  color: '#0052CC'
+  url: 'https://biniruu.atlassian.net/browse/$issuePrefix'
+  when: '$issuePrefix'
+
+- label: 'PR Size'
+  message: 'Large'
+  color: 'red'
+  when: '$commits > 20'

@@ -1,0 +1,4 @@
+{
+  "include": ["src"],
+  "extends": "../tsconfig.json" // 상속 받으려는 tsconfig 파일 경로 입력
+}
