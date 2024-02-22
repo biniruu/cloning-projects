@@ -1,0 +1,7 @@
+# files
+**/*.js
+**/*.spec.js
+**/*.test.js
+
+# paths
+**/node_modules/

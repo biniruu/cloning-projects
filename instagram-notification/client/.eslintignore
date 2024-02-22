@@ -1,0 +1,7 @@
+# files
+**/.eslintrc.js
+**/*.config.js
+**/tsconfig.json
+
+# paths
+node_modules/

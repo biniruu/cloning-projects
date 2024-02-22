@@ -1,0 +1,9 @@
+# files
+**/.eslintrc.js
+**/.prettierrc.js
+**/.stylelintrc.js
+**/jest.config.js
+**/tsconfig.json
+
+# paths
+**/node_modules/
