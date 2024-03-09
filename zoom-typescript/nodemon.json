@@ -1,4 +1,0 @@
-{
-  "exec": "ts-node src/server/server.ts",
-  "ignore": ["src/client/*"]
-}
